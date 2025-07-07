@@ -5,10 +5,8 @@ responsável por executar o pipeline de ETL para a análise de vendas.
 """
 
 from pipeline.extract import extract_from_excel
-
 # Importa a função concat_data_frames do módulo analise_vendas_loja_ficticia.
 from pipeline.load import load_excel
-
 # Importa a função extract_from_excel do módulo analise_vendas_loja_ficticia.
 from pipeline.transform import concat_data_frames
 
