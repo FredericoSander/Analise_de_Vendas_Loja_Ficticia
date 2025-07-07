@@ -1,12 +1,11 @@
 """esse é o arquivo load.py, que salva os DataFrames em um arquivo Excel."""
 
-import pandas as pd
 import os
 
+import pandas as pd
 
-def load_excel(data_frame: pd.DataFrame,
-               processed_path: str,
-               file_name: str) -> str:
+
+def load_excel(data_frame: pd.DataFrame, processed_path: str, file_name: str) -> str:
     """Recebe a list of DataFrames and salva no arquivo excel.
 
     Args:

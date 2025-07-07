@@ -1,10 +1,10 @@
 """Módulo de extração de dados do pipeline."""
 
-
-import os  # Biblioteca uqe mnanipula arquivos e pastas.
 import glob  # Biblioteca para listar arquivos.
-import pandas as pd  # Biblioteca para manipulação de dados.
+import os  # Biblioteca uqe mnanipula arquivos e pastas.
 from typing import List
+
+import pandas as pd  # Biblioteca para manipulação de dados.
 
 
 def extract_from_excel(path: str) -> List[pd.DataFrame]:
@@ -29,8 +29,7 @@ def extract_from_excel(path: str) -> List[pd.DataFrame]:
 
     # Verificar se há arquivos Excel
     if not all_files:
-        raise ValueError(
-            f"Nenhum arquivo Excel (.xlsx) encontrado em '{path}'.")
+        raise ValueError(f"Nenhum arquivo Excel (.xlsx) encontrado em '{path}'.")
 
     data_frame_list = []
 
