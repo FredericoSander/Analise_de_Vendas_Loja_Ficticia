@@ -14,9 +14,8 @@ def extract_from_excel(path: str) -> List[pd.DataFrame]:
     input_path(str): Caminho da pasta onde os arquivos CSV estão localizados.
 
     returns:
-    pd.DataFrame: DataFrame contendo os dados de todos os arquivos CSV.
+    DataFrame contendo os dados de todos os arquivos CSV.
     """
-
     # Validar se o caminho existe
     if not os.path.exists(path):
         raise FileNotFoundError(f"O caminho '{path}' não existe.")
@@ -45,7 +44,6 @@ def extract_from_excel(path: str) -> List[pd.DataFrame]:
 
 
 if __name__ == "__main__":
-
     try:
         data_frame_list = extract_from_excel("data/raw")
         print(data_frame_list)
