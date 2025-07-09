@@ -1,0 +1,20 @@
+site_name: Análise de Vendas de uma Loja Ficticia
+theme:
+  name: material
+  palette:
+    primary: red
+  language: pt
+
+repo_name: Analise_de_Vendas_Loja_Ficticia
+repo_url: https://github.com/FredericoSander/Analise_de_Vendas_Loja_Ficticia
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python
