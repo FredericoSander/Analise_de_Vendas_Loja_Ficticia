@@ -15,3 +15,31 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
     docs/
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
+
+
+flowchart LR<font></font>
+    A[Start: Problem - Car won't start] --> B{Is the battery dead?}<font></font>
+    B -- Yes --> C[Replace battery]<font></font>
+    B -- No --> D{Is the fuel tank empty?}<font></font>
+    D -- Yes --> E[Refill fuel tank]<font></font>
+    D -- No --> F{Is the engine oil level low?}<font></font>
+    F -- Yes --> G[Refill engine oil]<font></font>
+    F -- No --> H[Consult a mechanic]<font></font>
+    C --> I[End: Problem Solved]<font></font>
+    E --> I<font></font>
+    G --> I<font></font>
+    H --> I
+
+
+
+# Função de Extração de Dados
+
+### ::: app.pipeline.extract.extract_from_excel
+
+# Função de transformação de Dados
+
+### ::: app.pipeline.transform.concat_data_frames
+
+# Função de leitura dos dados
+
+### ::: app.pipeline.load.load_excel
