@@ -17,7 +17,7 @@
 
 ## Visão Geral
 
-O **Projeto de ETL em Python** é um sistema de ETL (Extract, Transform, Load) desenvolvido em Python para processar e consolidar dados de vendas armazenados em múltiplos arquivos Excel. O projeto pode ser replicado em diversos processos que necessite de consolidação de dados de fontes com a mesma extrutura.
+O **Projeto de ETL em Python** é um sistema de ETL (Extract, Transform, Load) desenvolvido em Python para processar e consolidar dados de vendas armazenados em múltiplos arquivos Excel. O projeto pode ser replicado em diversos processos que necessite de consolidação de dados de fontes com a mesma estrutura.
 
 ### Objetivo Principal
 Automatizar o processo de consolidação de dados de vendas, transformando múltiplos arquivos Excel em um único arquivo processado para análise posterior.
